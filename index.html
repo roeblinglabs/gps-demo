@@ -1,13 +1,22 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title> Bridge Vibration Tool</title>
+</head>
 <body>
-<h1>HTML Geolocation</h1>
-<p>Click the button to get your coordinates.</p>
+<main>
 
-<button onclick="getLocation()">Try It</button>
+<h1> Bridge Vibration Tool</h1>
+<h2> Instructions</h2>
+<p>1. Place phone on bridge with screen facing up.</p>
+<p>2. Select a location with the largest vibrations, such as on the sidewalk at midspan.</p>
+<p>3. Wait for a truck to appear.</p>
+<p>4. Recording one minute of vibrations or a few seconds before and after a heavy vehicle passes the span is enough.</p>
+  
+<button onclick="getLocation()">Get Geolocation</button>
 
 <p id="demo"></p>
-
+  
 <script>
 const x = document.getElementById("demo");
 
@@ -22,9 +31,9 @@ function getLocation() {
 function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude + 
-  "<br>Accuracy: " + position.coords.accuracy + " (meters)";
+  "<br>Geolocation Accuracy: " + position.coords.accuracy + " (meters)";
 }
 </script>
-
+  
 </body>
 </html>
