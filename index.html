@@ -17,7 +17,6 @@
 <button onclick="getLocation()"><h1>Start Measuring Bridge Vibrations</h1></button>
 <p></p>
 <p></p>
-<h2> Results Below</h2>
 <p id="demo"></p>
   
 <script>
@@ -32,7 +31,8 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  x.innerHTML = <h2> Results</h2>
+  "<br>Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude + 
   "<br>Geolocation Accuracy: " + position.coords.accuracy + " (meters)";
 }
